@@ -9,7 +9,8 @@ export default function Counter() {
     }
     const decrementCounter=()=>{
         console.log("decrement counter")
-        setCount(count-1)
+        if(count>0)
+         { setCount(count-1) }
     }
     console.log("I ran ")
   return (
