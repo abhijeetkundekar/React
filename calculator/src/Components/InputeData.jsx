@@ -46,15 +46,15 @@ export default function InputeData(props) {
         setVal2(e.target.value)
     }
   return (
-    <div>
+    <div className='mt-5 text-center'>
         
-            <input type='number' id="1" step={0.0}
+            <input className='me-2 p-2 ms-2' type='number' id="1" step={0.0}
             value={val1} onChange={setInput1}>
             </input>
-            <input type='number'  id="2" step={0.0}
+            <input className='me-2 p-2 ms-2' type='number'  id="2" step={0.0}
              value={val2} onChange={setInput2}>
              </input>
-            <select id="operator" name="operator" disabled={!operatorList.length} 
+            <select className='form-select form-select-lg mb-3' id="operator" name="operator" disabled={!operatorList.length} 
                 value={operator}  
                 onChange={e=>setOperator(e.target.value)}>
                  <option value="" />
@@ -64,7 +64,7 @@ export default function InputeData(props) {
                 </select>
             
     
-        <button onClick={submit}>submit</button>
+        <button className='btn btn-primary' onClick={submit}>submit</button>
     </div>
   )
 }
