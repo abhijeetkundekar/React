@@ -9,6 +9,7 @@ export default function History(props) {
        <ul className='list-group'>
       {props.items.map((item,idx)=>{
         return <li key={idx}>{item}</li>
+        
     })}
     </ul>
       </div>
